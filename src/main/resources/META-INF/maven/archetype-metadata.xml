@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="spring-boot-react-frontend-archetype"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.xml</include>
+        <include>**/*.html</include>
+        <include>**/*.properties</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.yaml</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>src/main/frontend</directory>
+      <includes>
+        <include>**/*.css</include>
+        <include>**/*.gitignore</include>
+        <include>**/*.babelrc</include>
+        <include>**/*.js</include>
+        <include>**/*.json</include>
+        <include>**/*.jsx</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>bin/static</directory>
+      <includes>
+        <include>**/*.html</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>bin</directory>
+      <includes>
+        <include>**/*.properties</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>launcher/ant</directory>
+      <includes>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>bin</directory>
+      <includes>
+        <include>**/*.yml</include>
+        <include>**/*.sql</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>bin/org</directory>
+      <includes>
+        <include>**/*.class</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>db</directory>
+      <includes>
+        <include>**/*.db</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>launcher</directory>
+      <includes>
+        <include>**/*.launch</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+	<include>*.bash</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <requiredProperties>
+	  <requiredProperty key="docker-registry-host" />
+	  <requiredProperty key="docker-image-namespace" />
+  </requiredProperties>
+</archetype-descriptor>
